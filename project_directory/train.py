@@ -1,7 +1,9 @@
-﻿from sac import SAC
+﻿
 from pusher_env import PusherEnv
-from replay_buffer import ReplayBuffer
 import numpy as np
+from project_directory.sac import SAC
+from project_directory.utility import ReplayBuffer
+
 
 env = PusherEnv()
 sac = SAC(state_dim=4, action_dim=2, max_action=1)
