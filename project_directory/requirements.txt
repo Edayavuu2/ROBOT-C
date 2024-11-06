@@ -1,5 +1,0 @@
-gym
-torch
-numpy
-matplotlib
-tensorboardX

@@ -1,0 +1,14 @@
+environment:
+  name: "Pusher-v4"               # Egitim ortami
+  total_steps: 1000000            # Egitim boyunca toplam adim sayisi
+  batch_size: 64                  # Mini-batch boyutu
+  log_interval: 1000              # Log yazdirma sikligi
+  save_interval: 5000             # Model kaydetme sikligi(adim sayisi cinsinden)
+
+sac:
+  gamma: 0.99                     # iskonto orani
+  tau: 0.005                      # Yumusak hedef guncelleme katsayisi
+  alpha: 0.2                      # Entropi katsayisi (otomatik ayarlama gerekebilir)
+  actor_lr: 0.0003                # Actor ogrenme orani
+  critic_lr: 0.0003               # Critic ogrenme orani
+  replay_buffer_size: 1000000     # Replay buffer maksimum boyutu
